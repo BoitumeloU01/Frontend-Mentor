@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+  />
+  <style>
+    :root {
+      --white: hsl(0, 57%, 25%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+
+      --fw-regular: 400;
+      --fw-bold: 700;
+
+      --font-family: "Outfit", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--light-gray);
+      font-family: var(--font-family);
+      font-weight: var(--fw-regular);
+      line-height: 1.5;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+
+    img {
+      width: 100%;
+      max-width: 280px;
+      display: block;
+      border-radius: 15px;
+    }
+
+    .code {
+      width: 80%;
+      max-width: 250px;
+      margin: 0 auto;
+      border-radius: 25px;
+      background-color: var(--white);
+      padding: 1.5325rem;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 1rem 0, 0.7rem;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: var(--fw-bold);
+      color: var(--dark-blue);
+    }
+
+    p {
+      margin: 0;
+      font-size: 0.75321rem, 0.5rem;
+      text-align: center;
+      color: var(--grayish-blue);
+    }
+  </style>
+  <body>
+    <div class="code row">
+      <img
+        src="https://i.postimg.cc/DwSWLmxQ/image-qr-code.png"
+        alt="qr-code"
+      />
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </div>
+  </body>
+</html>
